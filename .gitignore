@@ -6,3 +6,5 @@
 !/.zprofile
 !/.zshrc
 !/.env
+
+!/.tmux.conf

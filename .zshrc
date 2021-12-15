@@ -12,3 +12,9 @@ compinit
 # End of lines added by compinstall
 
 source .fn
+
+# cd hook (ls after cd)
+chpwd() {
+  emulate -L zsh
+  ls
+}

@@ -6,11 +6,16 @@
 
 # ls with options
 alias ls='ls --color --group-directories-first'
-alias ll='ls -hl --color --group-directories-first'
-alias la='ls -hal --color --group-directories-first'
+alias ll='ls -hl'
+alias la='ls -hal'
 
 # run the previous command with sudo
 alias plz='sudo $(fc -ln -1)'
+
+# sudo shortcuts
+alias pacman='sudo pacman'
+alias sys='sudo systemctl'
+alias snano='sudo nano'
 
 # lazygit
 alias lg='lazygit'

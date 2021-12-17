@@ -8,6 +8,7 @@ autoload -Uz compinit && compinit
 source ~/.shell/fn.sh
 
 # powerlevel10k
+# $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.p10k
 source ~/.p10k/powerlevel10k.zsh-theme && source ~/.p10k.zsh
 
 # cd hook (ls after cd)

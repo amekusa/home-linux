@@ -1,8 +1,7 @@
-#
-# ~/.bashrc
-#
+#  bash setup
+# ------------ ---- -- -
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source .fn
+source ~/.shell/fn.sh

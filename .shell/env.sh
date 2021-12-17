@@ -1,3 +1,6 @@
+#  shell environment variables
+# ----------------------------- ---- -- -
+
 export EDITOR=nano
 export VISUAL=$EDITOR
 

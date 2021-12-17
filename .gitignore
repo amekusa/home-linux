@@ -2,10 +2,12 @@
 !.gitignore
 
 !/.bash_profile
-!/.bashrc
 !/.zprofile
+!/.bashrc
 !/.zshrc
-!/.env
-!/.fn
+
+!/.shell/
+!/.shell/env.sh
+!/.shell/fn.sh
 
 !/.tmux.conf

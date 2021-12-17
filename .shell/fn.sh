@@ -1,3 +1,7 @@
+#  shell functions & aliases
+# --------------------------- ---- -- -
+
+
 # ---- Aliases ----
 
 # ls with options

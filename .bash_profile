@@ -1,7 +1,6 @@
-#
-# ~/.bash_profile
-#
+#  bash login setup
+# ------------------ ---- -- -
 
-source .env
+source ~/.shell/env.sh
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

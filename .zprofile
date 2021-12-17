@@ -1,1 +1,4 @@
-source .env
+#  zsh login setup
+# ----------------- ---- -- -
+
+source ~/.shell/env.sh

@@ -4,4 +4,5 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source ~/.shell/fn.sh
+# functions & aliases
+source ~/.sh/fn.sh

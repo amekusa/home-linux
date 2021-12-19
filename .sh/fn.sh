@@ -1,11 +1,17 @@
 #  shell functions & aliases
 # --------------------------- ---- -- -
 
+# reload the current shell
+sh=bash
+[ -z $ZSH_VERSION ] || sh=zsh
+alias reload="echo 'Reloading .${sh}rc ...' &&. ~/.${sh}rc"
 
-# ---- Aliases ----
+# cd
+alias ..='cd ..'
+alias ...='cd ../../'
 
 # ls with options
-alias ls='ls --color --group-directories-first'
+alias ls='ls -p --color --group-directories-first'
 alias ll='ls -hl'
 alias la='ls -hal'
 
@@ -20,10 +26,16 @@ alias snano='sudo nano'
 # lazygit
 alias lg='lazygit'
 
+# fix micro + tmux conflicts
+alias micro='TERM=xterm-256color micro'
 
-# ---- Functions ----
+# npm shortcuts
+alias nrun='npm run'
+alias nbuild='npm run build'
+alias ntest='npm run test'
+alias nwatch='npm run watch'
 
-# fancy find
+# find
 f() {
   if [ -z "$1" ]; then
     echo "Usage:"

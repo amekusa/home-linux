@@ -1,14 +1,16 @@
 *
 !.gitignore
 
+!/.update.sh
+
 !/.bash_profile
 !/.zprofile
 !/.bashrc
 !/.zshrc
 
-!/.shell/
-!/.shell/env.sh
-!/.shell/fn.sh
+!/.sh/
+!/.sh/env.sh
+!/.sh/fn.sh
 
 !/.tmux.conf
 !/.p10k.zsh

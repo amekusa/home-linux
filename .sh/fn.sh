@@ -21,6 +21,7 @@ alias plz='sudo $(fc -ln -1)'
 # sudo shortcuts
 alias pacman='sudo pacman'
 alias sys='sudo systemctl'
+alias f2b='sudo fail2ban-client'
 alias snano='sudo nano'
 
 # lazygit

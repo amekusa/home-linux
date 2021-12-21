@@ -13,4 +13,4 @@ export SAVEHIST=$HISTSIZE
 export FPATH="$HOME/.sh/zsh-completions/src:$FPATH"
 
 # zsh-autosuggestions
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)

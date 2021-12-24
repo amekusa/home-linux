@@ -12,6 +12,7 @@ https://github.com/romkatv/powerlevel10k
 cd "$HOME"
 
 echo "Checking repositories..."
+[ -d .sh ] || mkdir .sh
 cd .sh
 
 for repo in "${repos[@]}"; do

@@ -13,5 +13,8 @@ PATH="$COMPOSER_HOME/vendor/bin:$PATH"
 export NODE_PATH="$(npm root -g)"
 PATH="$NODE_PATH/.bin:$PATH"
 
+# custom executables
+PATH="$PATH:$HOME/.sh/bin"
+
 # export resulting path
 export PATH

@@ -1,10 +1,8 @@
 #  shell functions & aliases
 # --------------------------- ---- -- -
 
-# reload the current shell
-sh=bash
-[ -z $ZSH_VERSION ] || sh=zsh
-alias reload="echo 'Reloading .${sh}rc ...' &&. ~/.${sh}rc"
+
+# ---- aliases ----
 
 # cd
 alias ..='cd ..'
@@ -35,6 +33,18 @@ alias nrun='npm run'
 alias nbuild='npm run build'
 alias ntest='npm run test'
 alias nwatch='npm run watch'
+
+
+# ---- functions ----
+
+# reload .bashrc or .zshrc
+reload() {
+  local sh=bash
+  [ -z $ZSH_VERSION ] || sh=zsh
+  echo "Reloading .${sh}rc ..."
+  source ~/.${sh}rc && echo "Done."
+  echo
+}
 
 # find
 f() {

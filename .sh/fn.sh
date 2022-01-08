@@ -50,7 +50,7 @@ reload() {
 f() {
   if [ -z "$1" ]; then
     echo "Usage:"
-    echo "  f query [basedir] [maxdepth]"
+    echo "  f <query> [basedir] [maxdepth]"
     return 1
   fi
   local dir='.'; [ -z "$2" ] || dir="$2"
@@ -58,11 +58,11 @@ f() {
   find "$dir" -maxdepth "$depth" -iname "*${1}*"
 }
 
-# find and cd
+# find & cd
 fcd() {
   if [ -z "$1" ]; then
     echo "Usage:"
-    echo "  fcd query [basedir] [maxdepth]"
+    echo "  fcd <query> [basedir] [maxdepth]"
     return 1
   fi
   local dir='.'; [ -z "$2" ] || dir="$2"
@@ -73,4 +73,31 @@ fcd() {
     return 1
   fi
   cd "$dest"
+}
+
+# site health checker
+http() {
+  if [ -z "$1" ]; then
+    echo "Usage:"
+    echo "  http <location>"
+    echo "  http <location> -s (for HTTPS)"
+    return 1
+  fi
+  local protocol=http
+  [ "$2" = "-s" ] && protocol=https
+  local ua="Site Health Check"
+  local r=$(curl -Is -A "$ua" -o /dev/null -w '%{http_code} (%{time_total}s)\n' "$protocol://$1")
+  echo "$r"
+  local s="${r:0:3}"
+  [ "$s" -ge 200 ] && [ "$s" -lt 400 ]
+}
+
+# site health checker (HTTPS)
+https() {
+  if [ -z "$1" ]; then
+    echo "Usage:"
+    echo "  https <location>"
+    return 1
+  fi
+  http "$1" -s
 }

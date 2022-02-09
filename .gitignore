@@ -11,6 +11,8 @@
 !/.sh/fn.sh
 !/.sh/bin/
 !/.sh/bin/update.sh
+!/.sh/lib/
+!/.sh/lib/styles.sh
 
 !/.tmux.conf
 !/.p10k.zsh

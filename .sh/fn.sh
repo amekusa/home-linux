@@ -21,6 +21,8 @@ alias pacman='sudo pacman'
 alias sys='sudo systemctl'
 alias f2b='sudo fail2ban-client'
 alias snano='sudo nano'
+alias sless='sudo less'
+alias wless='sudo less +F -S'
 
 # lazygit
 alias lg='lazygit'

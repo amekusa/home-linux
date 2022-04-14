@@ -14,7 +14,7 @@ export NODE_PATH="$(npm root -g)"
 PATH="$PATH:$NODE_PATH/.bin"
 
 # custom executables
-PATH="$PATH:$HOME/.sh/bin"
+PATH="$PATH:$HOME/.sh/scripts"
 
 # export resulting path
 export PATH

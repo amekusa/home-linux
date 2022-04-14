@@ -9,8 +9,8 @@
 !/.sh/
 !/.sh/env
 !/.sh/fn
-!/.sh/bin/
-!/.sh/bin/update.sh
+!/.sh/scripts/
+!/.sh/scripts/update.sh
 !/.sh/lib/
 !/.sh/lib/styles
 

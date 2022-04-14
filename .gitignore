@@ -7,12 +7,12 @@
 !/.zshrc
 
 !/.sh/
-!/.sh/env.sh
-!/.sh/fn.sh
+!/.sh/env
+!/.sh/fn
 !/.sh/bin/
 !/.sh/bin/update.sh
 !/.sh/lib/
-!/.sh/lib/styles.sh
+!/.sh/lib/styles
 
 !/.tmux.conf
 !/.p10k.zsh

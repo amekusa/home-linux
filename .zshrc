@@ -14,7 +14,7 @@ bindkey "^[[3~"  delete-char
 bindkey "^[3;5~" delete-char
 
 # functions & aliases
-source ~/.sh/fn.sh
+source ~/.sh/fn
 
 # cd hook (ls after cd)
 chpwd() {

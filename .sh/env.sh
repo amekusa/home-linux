@@ -7,11 +7,11 @@ export VISUAL=$EDITOR
 
 # composer
 export COMPOSER_HOME="$HOME/.composer"
-PATH="$COMPOSER_HOME/vendor/bin:$PATH"
+PATH="$PATH:$COMPOSER_HOME/vendor/bin"
 
 # node
 export NODE_PATH="$(npm root -g)"
-PATH="$NODE_PATH/.bin:$PATH"
+PATH="$PATH:$NODE_PATH/.bin"
 
 # custom executables
 PATH="$PATH:$HOME/.sh/bin"

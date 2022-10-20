@@ -15,6 +15,12 @@ if command -v npm &> /dev/null; then
 	PATH="$PATH:$NODE_PATH/.bin"
 fi
 
+# rubygems
+if command -v ruby &> /dev/null; then
+	export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+	PATH="$PATH:$GEM_HOME/bin"
+fi
+
 # custom executables
 PATH="$PATH:$HOME/.sh/scripts"
 

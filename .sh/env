@@ -1,5 +1,5 @@
 #  shell environment variables
-# ----------------------------- ---- -- -
+# ----------------------------- *
 
 # default editor
 export EDITOR=nano
@@ -10,8 +10,10 @@ export COMPOSER_HOME="$HOME/.composer"
 PATH="$PATH:$COMPOSER_HOME/vendor/bin"
 
 # node
-export NODE_PATH="$(npm root -g)"
-PATH="$PATH:$NODE_PATH/.bin"
+if command -v npm &> /dev/null; then
+	export NODE_PATH="$(npm root -g)"
+	PATH="$PATH:$NODE_PATH/.bin"
+fi
 
 # custom executables
 PATH="$PATH:$HOME/.sh/scripts"

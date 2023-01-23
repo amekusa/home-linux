@@ -2,6 +2,6 @@
 # ------------------ ---- -- -
 
 # environment variables
-. ~/.sh/env
+. ~/.sh/env.sh
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

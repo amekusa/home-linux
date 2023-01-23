@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASE="$HOME/.sh"
-. "$BASE/lib/styles"
+. "$BASE/lib/styles.sh"
 
 REPOS_DIR="$BASE/repos"
 REPOS=(

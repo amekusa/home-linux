@@ -5,4 +5,4 @@
 [[ $- != *i* ]] && return
 
 # functions & aliases
-. ~/.sh/fn
+. ~/.sh/fn.sh

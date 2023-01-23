@@ -73,7 +73,7 @@ fcd() {
 	local dir='.'; [ -z "$2" ] || dir="$2"
 	local depth=2; [ -z "$3" ] || depth="$3"
 	local dest=$(find "$dir" -maxdepth "$depth" -type d -iname "*${1}*" -print -quit)
-	if [ -z $dest ]; then
+	if [ -z "$dest" ]; then
 		echo "'${1}' is not found"
 		return 1
 	fi

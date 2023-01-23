@@ -10,13 +10,13 @@ export COMPOSER_HOME="$HOME/.composer"
 PATH="$PATH:$COMPOSER_HOME/vendor/bin"
 
 # node
-if command -v npm &> /dev/null; then
+if [[ -x "$(command -v npm)" ]]; then
 	export NODE_PATH="$(npm root -g)"
 	PATH="$PATH:$NODE_PATH/.bin"
 fi
 
 # rubygems
-if command -v ruby &> /dev/null; then
+if [[ -x "$(command -v ruby)" ]]; then
 	export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 	PATH="$PATH:$GEM_HOME/bin"
 fi

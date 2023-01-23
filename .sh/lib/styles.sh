@@ -1,5 +1,5 @@
 #  colors and font styles
-# ------------------------ ---- -- -
+# ------------------------ *
 # example:
 # $ echo -e "${GRN}Hello World${RST}"
 

@@ -1,5 +1,5 @@
 #  zsh setup
-# ----------- ---- -- -
+# --------------- *
 
 # uncomment to analyze the zsh startup time
 # zmodload zsh/zprof
@@ -18,8 +18,8 @@ bindkey "^[3;5~" delete-char
 
 # cd hook (ls after cd)
 chpwd() {
-  emulate -L zsh
-  ls
+	emulate -L zsh
+	ls
 }
 
 # z

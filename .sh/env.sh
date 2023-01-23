@@ -21,6 +21,9 @@ if command -v ruby &> /dev/null; then
 	PATH="$PATH:$GEM_HOME/bin"
 fi
 
+# nextcloud
+export NEXTCLOUD_PHP_CONFIG="/etc/webapps/nextcloud/php.ini"
+
 # custom executables
 PATH="$PATH:$HOME/.sh/scripts"
 

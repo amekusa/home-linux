@@ -5,24 +5,24 @@
 export EDITOR=nano
 export VISUAL=$EDITOR
 
+# nextcloud
+export NEXTCLOUD_PHP_CONFIG="/etc/webapps/nextcloud/php.ini"
+
 # composer
 export COMPOSER_HOME="$HOME/.composer"
 PATH="$PATH:$COMPOSER_HOME/vendor/bin"
 
 # node
-if [[ -x "$(command -v npm)" ]]; then
+if [ -x "$(command -v npm)" ]; then
 	export NODE_PATH="$(npm root -g)"
 	PATH="$PATH:$NODE_PATH/.bin"
 fi
 
 # rubygems
-if [[ -x "$(command -v ruby)" ]]; then
+if [ -x "$(command -v ruby)" ]; then
 	export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 	PATH="$PATH:$GEM_HOME/bin"
 fi
-
-# nextcloud
-export NEXTCLOUD_PHP_CONFIG="/etc/webapps/nextcloud/php.ini"
 
 # custom executables
 PATH="$PATH:$HOME/.sh/scripts"

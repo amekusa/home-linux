@@ -80,6 +80,22 @@ fcd() {
 	cd "$dest"
 }
 
+# mkdir & cd
+mkcd() {
+	if [ -z "$1" ]; then
+		echo "Usage:"
+		echo "  mkcd <dir>"
+		return 1
+	fi
+	if [ -d "$1" ]; then
+		echo "dir '$1' already exists"
+		cd -- "$1"
+		return
+	fi
+	mkdir -p -- "$1" &&
+	cd -- "$1"
+}
+
 # site health checker
 http() {
 	if [ -z "$1" ]; then

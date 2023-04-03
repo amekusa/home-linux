@@ -6,7 +6,9 @@ export EDITOR=nano
 export VISUAL=$EDITOR
 
 # nextcloud
-export NEXTCLOUD_PHP_CONFIG="/etc/webapps/nextcloud/php.ini"
+export NEXTCLOUD_PHP="/usr/bin/php"
+export NEXTCLOUD_PHP_CONFIG="/etc/php/php.ini"
+#export NEXTCLOUD_PHP_CONFIG="/etc/webapps/nextcloud/php.ini"
 
 # composer
 export COMPOSER_HOME="$HOME/.composer"
